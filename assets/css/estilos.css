@@ -1,0 +1,212 @@
+:root {
+  --rojo: #e63946;
+  --amarillo: #ffce08;
+  --blanco: #ffffff;
+  --gris-body: #111111;
+  --gris-claro: #222222;
+  --negro: #000000;
+  --texto-secundario: #cccccc;
+
+  --radio-borde: 0.75rem;
+  --sombra-suave: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--gris-body);
+  color: var(--blanco);
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--negro);
+  padding: 1rem 2rem;
+}
+
+.logo {
+  height: 5rem;
+}
+
+nav a {
+  margin-left: 1.5rem;
+  color: var(--amarillo);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--rojo);
+}
+
+/* MAIN */
+.entrena {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.entrena h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--blanco);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card {
+  background-color: var(--gris-claro);
+  padding: 1.5rem;
+  width: 250px;
+  border-radius: var(--radio-borde);
+  box-shadow: var(--sombra-suave);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  margin-bottom: 1rem;
+  color: var(--rojo);
+}
+
+.card a {
+  color: var(--amarillo);
+  text-decoration: underline;
+}
+
+.detalle-blanco {
+  color: var(--blanco);
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+/* PLANES */
+.planes {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: var(--gris-body);
+}
+
+.planes h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--blanco);
+}
+
+table {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: var(--gris-claro);
+}
+
+table thead {
+  background-color: var(--rojo);
+  color: var(--blanco);
+}
+
+table th,
+table td {
+  padding: 1rem;
+  border: 1px solid #444;
+}
+
+table td a {
+  color: var(--amarillo);
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+table td a:hover {
+  color: var(--rojo);
+  text-decoration: underline;
+}
+
+.matricula {
+  margin-top: 1.5rem;
+  color: var(--amarillo);
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  align-items: center;
+  background-color: var(--negro);
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.logo-footer {
+  height: 5rem;
+  margin-right: 2rem;
+}
+
+.footer-info {
+  color: var(--blanco);
+}
+
+.footer-info p {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Íconos personalizados */
+.direccion::before {
+  content: "\f3c5";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  margin-right: 0.5rem;
+  color: var(--amarillo);
+}
+
+.contacto::before {
+  content: "\f232";
+  font-family: "Font Awesome 6 Brands";
+  margin-right: 0.5rem;
+  color: var(--amarillo);
+}
+
+.instagram::before {
+  content: "\f16d";
+  font-family: "Font Awesome 6 Brands";
+  margin-right: 0.5rem;
+  color: var(--amarillo);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo-footer {
+    margin-bottom: 1rem;
+  }
+}

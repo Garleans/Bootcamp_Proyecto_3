@@ -1,3 +1,4 @@
+/* Colores */
 :root {
   --rojo: #e63946;
   --amarillo: #ffce08;
@@ -24,7 +25,7 @@ body {
   line-height: 1.6;
 }
 
-/* HEADER */
+/* Header */
 header {
   display: flex;
   align-items: center;
@@ -49,7 +50,7 @@ nav a:hover {
   color: var(--rojo);
 }
 
-/* MAIN */
+/* Main */
 .entrena {
   text-align: center;
   padding: 4rem 2rem;
@@ -97,7 +98,7 @@ nav a:hover {
   margin-top: 1rem;
 }
 
-/* PLANES */
+/* Products */
 .planes {
   padding: 4rem 2rem;
   text-align: center;
@@ -147,7 +148,7 @@ table td a:hover {
   font-weight: bold;
 }
 
-/* FOOTER */
+/* Footer */
 footer {
   display: flex;
   align-items: center;
@@ -171,7 +172,7 @@ footer {
   align-items: center;
 }
 
-/* Íconos personalizados */
+/* Íconos del footer*/
 .direccion::before {
   content: "\f3c5";
   font-family: "Font Awesome 6 Free";
@@ -194,7 +195,7 @@ footer {
   color: var(--amarillo);
 }
 
-/* Responsive */
+/* Responsivo */
 @media (max-width: 768px) {
   .cards {
     flex-direction: column;
